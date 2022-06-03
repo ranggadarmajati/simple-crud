@@ -15,15 +15,16 @@ This repo use for mentoring nodejs and reactjs integration api training
 npm install or yarn install
 ```
 3. Create `.env` file (copy `.env.example` and fill it)
-4. Use the sequelize-cli command to install Project :
+4. Create `config.json` on `config/` directory (copy `config.json.example` and fill it)
+5. Use the sequelize-cli command for database migration :
 ```js
  npx sequelize-cli db:migrate
 ```
-5. Run this Project
+6. Run this Project
 ```js
  npm start or yarn start
 ```
-6. Finish
+7. Finish
 
 ##
 
@@ -36,11 +37,11 @@ npm install or yarn install
 ```
 
 | Query Parameter | Type     | Description                |
-| :-------- | :------- | :------------------------- |
-| `page` | `integer` | page of data |
-| `search` | `string` | search data by **email** or **firstName** |
-| `sortBy` | `string` | sortBy **email** or **firstName** |
-| `sort` | `string` | sort **ASC** or **DESC** |
+| :-------------- | :------- | :------------------------- |
+|      `page`     | `integer`| page of data               |
+|     `search`    | `string` | search data by **email** or **firstName** |
+| `sortBy`  | `string` | sortBy **email** or **firstName** |
+| `sort`    | `string` | sort **ASC** or **DESC** |
 
 #### Get user
 
