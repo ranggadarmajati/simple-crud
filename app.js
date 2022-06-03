@@ -33,7 +33,7 @@ app.use(function (req, res, next) {
 // defined routes
 const userRoute = require('./routes/user')
 // route
-app.use('/users', userRoute);
+app.use('/api/users', userRoute);
 app.get('/', (req, res) => {
     res.send('Sample CRUD NODEJS Ready to use!')
 })
